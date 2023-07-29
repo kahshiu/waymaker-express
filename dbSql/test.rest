@@ -1,0 +1,82 @@
+##########################
+## SECTION: Diagnostics 
+##########################
+GET http://localhost:8022/api/diagnostics/version
+
+#### 
+GET http://localhost:8022/api/diagnostics/testing
+
+
+##########################
+## SECTION: Definitions
+##########################
+GET http://localhost:8022/api/definitions/my_states
+
+
+##########################
+## SECTION: Entity
+##########################
+
+GET http://localhost:8022/api/entity?entityId=1
+
+#####
+GET http://localhost:8022/api/entity/search?entityType=1
+
+#####
+POST http://localhost:8022/api/individual
+Content-Type: application/json 
+
+{
+  "entityId": 1,
+  "entityType": 1,
+  "entityName": "mr. beanie ddddd",
+  "note": "something here"
+}
+
+#####
+PATCH http://localhost:8022/api/individual
+Content-Type: application/json 
+
+{
+  "entityId": 1,
+  "entityType": 1,
+  "entityName": "mr. beanie 1230000",
+  "note": "something here"
+}
+
+#####
+GET http://localhost:8022/api/entity/search?entityType=1&entityName=mr
+
+
+##########################
+## SECTION: Authentication
+##########################
+GET http://localhost:8022/api/google/register
+
+#######
+GET http://localhost:8020/api/google/verify
+
+#######
+GET http://localhost:8020/api/google/refresh
+
+#######
+GET http://localhost:8020/api/google/userDetails
+
+#######
+GET http://localhost:8020/api/mail/test
+
+#######
+GET http://localhost:8020/api/mail/send
+
+
+##########################
+## SECTION: Cron 
+##########################
+GET http://localhost:8020/cron/start
+
+####
+GET http://localhost:8020/cron/pause
+
+####
+GET http://localhost:8020/cron/resume
+
