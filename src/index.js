@@ -8,6 +8,7 @@ const middlewares = require("./middlewares");
 const diagnostics = require("./routes/diagnostics");
 const definitions = require("./routes/definitions");
 const entities = require("./routes/entities");
+const google = require("./routes/google/controller");
 const templates = require("./routes/templates");
 
 const server = express();
@@ -19,6 +20,7 @@ const router = express.Router();
 diagnostics.registerRoutes(router);
 definitions.registerRoutes(router);
 entities.registerRoutes(router);
+google.registerRoutes(router);
 templates.registerRoutes(router);
 
 server.get("/", (req, resp)=>{

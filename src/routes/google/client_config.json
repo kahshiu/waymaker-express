@@ -1,0 +1,11 @@
+{
+  "web": {
+    "client_id": "798053362697-rc5atda1dpjbvu1s9rt9oepterlu80tn.apps.googleusercontent.com",
+    "project_id": "testing-api-392309",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "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",
+    "redirect_uris": ["http://localhost:8020/api/google/register"]
+  }
+}

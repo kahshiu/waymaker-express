@@ -54,7 +54,7 @@ GET http://localhost:8022/api/entity/search?entityType=1&entityName=mr
 GET http://localhost:8022/api/google/register
 
 #######
-GET http://localhost:8020/api/google/verify
+POST http://localhost:8020/api/google/verifyAdmin
 
 #######
 GET http://localhost:8020/api/google/refresh

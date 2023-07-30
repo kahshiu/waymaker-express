@@ -52,11 +52,14 @@ const MY_STATES = [
 ];
 
 module.exports = {
+  // enums 
   EntityType,
   IcType,
   ScheduleState,
   MatterType,
   TemplateType,
+
+  // statics
   APP_NAME,
   PORT_NO,
   VERSION,
